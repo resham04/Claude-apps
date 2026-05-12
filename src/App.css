@@ -28,6 +28,19 @@
 
 .App-link {
   color: var(--color-link);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.App-link:hover {
+  color: var(--color-link-hover);
+  background-color: var(--color-surface-hover);
+}
+
+.App-link:visited {
+  color: var(--color-link-visited);
 }
 
 /* ── Theme Toggle Switch ─────────────────────── */

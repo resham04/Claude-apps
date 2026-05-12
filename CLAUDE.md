@@ -35,7 +35,16 @@ The app implements a theme system (light/dark) stored in localStorage. The `getI
 2. Falls back to system preference via `prefers-color-scheme` media query
 3. Defaults to 'light'
 
-Theme is applied via the `data-theme` attribute on the root div and controlled by CSS variables in App.css.
+Theme is applied via the `data-theme` attribute on the root div and controlled by CSS variables in index.css.
+
+**Color Palette**: Comprehensive theme includes 30+ CSS variables covering:
+- Base colors (background, text, borders, surfaces)
+- Interactive elements (links, hover states, visited states)
+- Status colors (success, warning, error, info)
+- Shadows and depth
+- Accent colors (primary, secondary)
+
+See `src/THEME_COLORS.md` for complete color reference and usage examples.
 
 ### Testing Approach
 - Uses React Testing Library (`@testing-library/react`) for unit tests
