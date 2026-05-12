@@ -16,21 +16,85 @@ code {
 }
 
 [data-theme="light"] {
-  --color-bg:           #ffffff;
-  --color-text:         #20232a;
-  --color-header-bg:    #f0f4f8;
-  --color-header-text:  #20232a;
-  --color-link:         #0070c0;
-  --color-toggle-track: #b0b8c4;
-  --color-toggle-knob:  #ffffff;
+  /* Base Colors */
+  --color-bg:              #ffffff;
+  --color-text:            #20232a;
+  --color-text-secondary:  #6c757d;
+  --color-border:          #dee2e6;
+  --color-divider:         #e9ecef;
+  --color-surface:         #f8f9fa;
+  --color-surface-hover:   #e9ecef;
+
+  /* Header */
+  --color-header-bg:       #f0f4f8;
+  --color-header-text:     #20232a;
+
+  /* Links & Interactive */
+  --color-link:            #0070c0;
+  --color-link-hover:      #005399;
+  --color-link-visited:    #6f42c1;
+
+  /* UI Elements */
+  --color-toggle-track:    #b0b8c4;
+  --color-toggle-knob:     #ffffff;
+
+  /* Status Colors */
+  --color-success:         #28a745;
+  --color-success-light:   #d4edda;
+  --color-warning:         #ffc107;
+  --color-warning-light:   #fff3cd;
+  --color-error:           #dc3545;
+  --color-error-light:     #f8d7da;
+  --color-info:            #17a2b8;
+  --color-info-light:      #d1ecf1;
+
+  /* Shadows */
+  --color-shadow:          rgba(0, 0, 0, 0.1);
+  --color-shadow-hover:    rgba(0, 0, 0, 0.15);
+
+  /* Accent Colors */
+  --color-primary:         #0070c0;
+  --color-secondary:       #6c757d;
 }
 
 [data-theme="dark"] {
-  --color-bg:           #20232a;
-  --color-text:         #e8eaf0;
-  --color-header-bg:    #282c34;
-  --color-header-text:  #ffffff;
-  --color-link:         #61dafb;
-  --color-toggle-track: #61dafb;
-  --color-toggle-knob:  #ffffff;
+  /* Base Colors */
+  --color-bg:              #20232a;
+  --color-text:            #e8eaf0;
+  --color-text-secondary:  #adb5bd;
+  --color-border:          #495057;
+  --color-divider:         #343a40;
+  --color-surface:         #2d3139;
+  --color-surface-hover:   #3a4149;
+
+  /* Header */
+  --color-header-bg:       #282c34;
+  --color-header-text:     #ffffff;
+
+  /* Links & Interactive */
+  --color-link:            #61dafb;
+  --color-link-hover:      #87eaff;
+  --color-link-visited:    #b084cc;
+
+  /* UI Elements */
+  --color-toggle-track:    #61dafb;
+  --color-toggle-knob:     #ffffff;
+
+  /* Status Colors */
+  --color-success:         #51cf66;
+  --color-success-light:   #2f5233;
+  --color-warning:         #ffd43b;
+  --color-warning-light:   #4d3f1f;
+  --color-error:           #ff6b6b;
+  --color-error-light:     #4d2626;
+  --color-info:            #74c0fc;
+  --color-info-light:      #2a3f52;
+
+  /* Shadows */
+  --color-shadow:          rgba(0, 0, 0, 0.3);
+  --color-shadow-hover:    rgba(0, 0, 0, 0.5);
+
+  /* Accent Colors */
+  --color-primary:         #61dafb;
+  --color-secondary:       #adb5bd;
 }
