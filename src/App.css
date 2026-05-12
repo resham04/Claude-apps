@@ -14,18 +14,76 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  position: relative;
+  background-color: var(--color-header-bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--color-header-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--color-link);
+}
+
+/* ── Theme Toggle Switch ─────────────────────── */
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.theme-toggle__label {
+  font-size: 0.85rem;
+  color: var(--color-header-text);
+  user-select: none;
+}
+
+.theme-toggle__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-toggle__track {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-toggle-track);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.theme-toggle__track::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: var(--color-toggle-knob);
+  transition: transform 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.theme-toggle__input:checked + .theme-toggle__track::after {
+  transform: translateX(1.5rem);
+}
+
+.theme-toggle__input:focus-visible + .theme-toggle__track {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
 }
 
 @keyframes App-logo-spin {
